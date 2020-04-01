@@ -12,4 +12,6 @@ RUN deno fetch deps.ts
 ADD . .
 RUN deno fetch mod.ts
 
+RUN deno test
+
 CMD ["run", "--allow-net", "mod.ts"]

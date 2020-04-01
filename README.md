@@ -1,16 +1,20 @@
-How I installed deno
+# How I installed deno
 
-```
-Install and Manage Multiple Versions
-With asdf and asdf-deno:
+First installed https://asdf-vm.com/#/
 
-asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
+Then...
 
-asdf install deno 0.38.0
+`asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git`
+
+`asdf install deno 0.38.0`
 
 # Activate globally with:
-asdf global deno 0.38.0
+`asdf global deno 0.38.0`
 
 # Activate locally in the current folder with:
-asdf local deno 0.38.0
-```
+`asdf local deno 0.38.0`
+
+# Build, Run and Test
+`./build.sh` to build the container
+`./run.sh` to run it
+`curl localhost:1993` to check its working
